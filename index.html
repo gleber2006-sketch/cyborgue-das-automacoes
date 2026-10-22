@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#05090e" />
+  <meta name="description" content="Cyborgue das Automações: automações inteligentes, sites imersivos e sistemas personalizados para negócios que querem evoluir." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Cyborgue das Automações | O futuro em movimento" />
+  <meta property="og:description" content="Automações, experiências digitais e sistemas sob medida. Ideias complexas. Soluções extraordinárias." />
+  <meta property="og:image" content="assets/hero-poster.webp" />
+  <title>Cyborgue das Automações — O futuro em movimento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="preload" href="assets/hero-poster.webp" as="image" type="image/webp" />
+  <link rel="stylesheet" href="styles.css?v=4" />
+  <script src="script.js?v=4" defer></script>
+</head>
+<body>
+  <div class="noise-overlay" aria-hidden="true"></div>
+  <div id="boot" class="boot-screen" role="status" aria-live="polite">
+    <div class="boot-bg-grid" aria-hidden="true"></div>
+    <div class="boot-center">
+      <div class="boot-kicker"><span class="pulse-dot"></span> CYBORGUE.OS <span class="muted">//</span> V 1.0</div>
+      <div class="boot-dial" aria-hidden="true">
+        <svg viewBox="0 0 210 210" width="210" height="210"><circle cx="105" cy="105" r="86" fill="none" stroke="#1b333d" stroke-width="2"/><circle cx="105" cy="105" r="86" fill="none" stroke="#58e7f4" stroke-width="4" stroke-linecap="round" stroke-dasharray="540.35" stroke-dashoffset="540.35" id="loader-circle" transform="rotate(-90 105 105)"/><circle cx="105" cy="105" r="68" fill="none" stroke="#58e7f4" stroke-opacity=".12" stroke-width="1" stroke-dasharray="2 7"/></svg>
+        <div class="boot-dial-label"><strong id="loader-percent">00</strong><small>%</small></div>
+      </div>
+      <h1>INICIALIZANDO <em>SISTEMA</em></h1>
+      <p id="loader-message">Preparando a sequência visual...</p>
+      <div class="boot-track"><span id="loader-bar"></span></div>
+      <div class="boot-foot"><span>CARREGAMENTO DE FRAMES</span><span id="loader-frame-count">000 / 120</span></div>
+    </div>
+  </div>
+
+  <a class="skip-link" href="#servicos">Pular animação e ir aos serviços</a>
+
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#inicio" aria-label="Cyborgue das Automações, início">
+      <svg class="brand-symbol" width="43" height="43" viewBox="0 0 44 44" fill="none" aria-hidden="true"><path d="M22 2 40 12.5v19L22 42 4 31.5v-19L22 2Z" stroke="currentColor" stroke-width="1.7"/><path d="M29 14.5a10 10 0 1 0 0 15M30 14l-7 8 7 8" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/><path d="M6 22h6M32 22h6" stroke="currentColor" stroke-width="1.3"/></svg>
+      <span class="brand-words"><strong>CYBORGUE</strong><small>DAS AUTOMAÇÕES</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Navegação principal">
+      <a href="#servicos">SERVIÇOS</a><a href="#solucoes">SOLUÇÕES</a><a href="#processo">O PROCESSO</a>
+    </nav>
+    <div class="header-actions"><button class="audio-button" data-open-film type="button"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m7 5 8 5-8 5V5Z" fill="currentColor"/></svg><span>VER COM SOM</span></button><a class="header-cta" href="#contato">FALAR SOBRE UM PROJETO <span>↗</span></a></div>
+    <button class="menu-button" id="menu-button" aria-label="Abrir menu" aria-controls="mobile-nav" aria-expanded="false"><span></span><span></span></button>
+  </header>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Menu para celular" inert>
+    <a href="#servicos">SERVIÇOS <span>↗</span></a><a href="#solucoes">SOLUÇÕES <span>↗</span></a><a href="#processo">O PROCESSO <span>↗</span></a><a href="#contato">INICIAR PROJETO <span>↗</span></a>
+    <button type="button" data-open-film>▶ VER CENA COM ÁUDIO ORIGINAL</button>
+  </nav>
+
+  <main>
+    <section class="hero-scroll" id="inicio" aria-label="Cyborgue: sequência cinematográfica interativa">
+      <div class="hero-sticky">
+        <canvas id="hero-canvas" aria-label="Máscara futurista abrindo para revelar um rosto e fechando conforme a página é rolada" role="img"></canvas>
+        <div class="hero-poster" id="hero-poster" aria-hidden="true"></div>
+        <div class="hero-gradient" aria-hidden="true"></div>
+        <div class="hero-scanlines" aria-hidden="true"></div>
+        <div class="hero-top-index hud-text"><span class="signal-dot"></span> CYBORGUE SYSTEM <span class="hero-code-separator">/</span> MOTION INTERFACE <span class="hero-code-separator">/</span> 001</div>
+        <div class="hero-edge-left" aria-hidden="true"><span>FUTURE IS BEING BUILT</span><span class="line"></span><span>01 — 03</span></div>
+        <div class="hero-corner-top" aria-hidden="true">◢</div>
+        <div class="hero-copy active" data-scene="0">
+          <div class="scene-tag"><span class="tag-line"></span> BEM-VINDO AO PRÓXIMO NÍVEL</div>
+          <h2>O FUTURO<br />NÃO ESPERA<span class="period">.</span></h2>
+          <p>Automações inteligentes, experiências digitais e sistemas sob medida. A tecnologia que você imagina, nós tornamos real.</p>
+          <a class="hero-link" href="#servicos">EXPLORE O QUE CRIAMOS <span class="arrow">↓</span></a>
+        </div>
+        <div class="hero-copy" data-scene="1" aria-hidden="true">
+          <div class="scene-tag"><span class="tag-line"></span> POR TRÁS DE CADA SOLUÇÃO</div>
+          <h2>VISÃO<br /><span class="outline-word">HUMANA.</span><br />PODER DIGITAL<span class="period">.</span></h2>
+          <p>Não seguimos fórmulas prontas. Combinamos estratégia, criatividade e engenharia para resolver desafios reais.</p>
+          <a class="hero-link" href="#solucoes">CONHEÇA AS POSSIBILIDADES <span class="arrow">↓</span></a>
+        </div>
+        <div class="hero-copy" data-scene="2" aria-hidden="true">
+          <div class="scene-tag"><span class="tag-line"></span> A PRÓXIMA EVOLUÇÃO COMEÇA AQUI</div>
+          <h2>VOCÊ IMAGINA.<br /><span class="outline-word">NÓS CRIAMOS.</span></h2>
+          <p>Menos trabalho repetitivo. Mais desempenho. Mais impacto. O próximo passo do seu negócio começa com uma ideia.</p>
+          <a class="hero-link" href="#contato">TIRE SEU PROJETO DO PAPEL <span class="arrow">↗</span></a>
+        </div>
+        <div class="hero-right-hud" aria-hidden="true"><span class="hud-line"></span><span id="phase-label">MÁSCARA // FECHADA</span><strong id="hero-counter">000 <em>/ 119</em></strong><span class="hud-wave">▁ ▃ ▅ ▇ ▅ ▃ ▁</span></div>
+        <div class="hero-bottom-bar"><div class="scroll-instruction"><span class="scroll-mouse"><i></i></span><span>ROLE PARA CONTROLAR <strong>A TRANSFORMAÇÃO</strong></span></div><div class="scroll-progress-container" aria-hidden="true"><div class="scroll-progress-labels"><span>PROTOCOLO / 01</span><span>REVELAÇÃO / 02</span><span>REINICIALIZAÇÃO / 03</span></div><div class="scroll-progress-track"><span id="hero-progress"></span><i class="progress-marker a"></i><i class="progress-marker b"></i></div></div><button class="hero-film-button" type="button" data-open-film aria-label="Assistir à cena original com som"><span class="film-icon">▶</span><span>EXPERIÊNCIA<br /><strong>COM ÁUDIO</strong></span></button></div>
+      </div>
+    </section>
+
+    <section class="section intro-band" aria-label="Apresentação">
+      <div class="section-wrap intro-grid"><p class="eyebrow"><span class="eyebrow-cross">✳</span> TECNOLOGIA COM PROPÓSITO</p><p class="intro-statement">Nós não criamos apenas códigos ou páginas. <strong>Criamos novas possibilidades</strong> para pessoas e negócios que estão prontos para evoluir<span class="cyan-dot">.</span></p></div>
+      <div class="marquee-wrap" aria-hidden="true"><div class="marquee-track"><span>IMAGINE MAIS</span><b>✳</b><span>AUTOMATIZE TUDO</span><b>✳</b><span>CRIE O IMPOSSÍVEL</span><b>✳</b><span>IMAGINE MAIS</span><b>✳</b><span>AUTOMATIZE TUDO</span><b>✳</b><span>CRIE O IMPOSSÍVEL</span><b>✳</b></div></div>
+    </section>
+
+    <section class="section services-section" id="servicos">
+      <div class="section-wrap">
+        <div class="section-topline"><span>01 / ÁREAS DE ATUAÇÃO</span><span>[ 03 ESPECIALIDADES ]</span></div>
+        <div class="section-heading"><div><span class="section-kicker">DO CONCEITO À EXECUÇÃO</span><h2>O QUE NÓS<br /><span>FAZEMOS.</span></h2></div><p>Três frentes. Infinitas possibilidades. Tecnologia aplicada ao que realmente move o seu negócio.</p></div>
+        <div class="service-grid">
+          <article class="service-card reveal"><div class="card-head"><span>01 / AUTOMAÇÃO</span><span class="mini-diagonal">↗</span></div><div class="service-icon" aria-hidden="true"><svg viewBox="0 0 100 100"><rect x="32" y="32" width="36" height="36" rx="4"/><rect x="43" y="43" width="14" height="14" rx="2"/><path d="M44 32V14M56 32V14M44 68v18M56 68v18M32 44H14M32 56H14M68 44h18M68 56h18"/><circle cx="44" cy="13" r="2"/><circle cx="86" cy="56" r="2"/></svg></div><div><h3>AUTOMAÇÕES<br /><span>INTELIGENTES.</span></h3><p>Elimine tarefas repetitivas, conecte ferramentas e faça seus processos trabalharem a favor do crescimento.</p><div class="tag-set"><span>FLUXOS DE TRABALHO</span><span>IA & AGENTES</span><span>INTEGRAÇÕES</span></div></div></article>
+          <article class="service-card reveal"><div class="card-head"><span>02 / EXPERIÊNCIAS</span><span class="mini-diagonal">↗</span></div><div class="service-icon" aria-hidden="true"><svg viewBox="0 0 100 100"><rect x="13" y="20" width="74" height="55" rx="4"/><path d="M13 34h74M23 27h3m5 0h3m5 0h3M25 52h50M25 62h31M43 75v10m14-10v10M32 85h36"/><path d="m66 56 8-7-8-7"/></svg></div><div><h3>SITES QUE<br /><span>IMPRESSIONAM.</span></h3><p>Sites modernos, landing pages cinematográficas e experiências interativas que transformam visitas em oportunidades.</p><div class="tag-set"><span>SCROLL MOTION</span><span>LANDING PAGES</span><span>DESIGN RESPONSIVO</span></div></div></article>
+          <article class="service-card reveal"><div class="card-head"><span>03 / ENGENHARIA</span><span class="mini-diagonal">↗</span></div><div class="service-icon" aria-hidden="true"><svg viewBox="0 0 100 100"><path d="m50 10 34 19v42L50 90 16 71V29L50 10Z"/><path d="M16 29 50 48l34-19M50 48v42M33 19l34 20M34 58l9 5m-9 4 9 5"/><circle cx="50" cy="48" r="4"/></svg></div><div><h3>SISTEMAS<br /><span>SOB MEDIDA.</span></h3><p>Plataformas digitais, painéis e softwares personalizados, projetados para acompanhar a complexidade da sua operação.</p><div class="tag-set"><span>SAAS</span><span>DASHBOARDS</span><span>APLICAÇÕES WEB</span></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section solutions-section" id="solucoes">
+      <div class="section-wrap"><div class="section-topline"><span>02 / SEM LIMITES</span><span>[ FEITO PARA O SEU DESAFIO ]</span></div><div class="section-heading"><div><span class="section-kicker">A FERRAMENTA CERTA. A SOLUÇÃO CERTA.</span><h2>IDEIAS COMPLEXAS.<br /><span>EXECUÇÃO INTELIGENTE.</span></h2></div><p>Não existe solução de prateleira para um negócio que quer ser único.</p></div>
+        <div class="solutions-grid">
+          <article class="solution-box solution-feature reveal"><div class="solution-pattern" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div><div class="solution-icon">⌁</div><div class="solution-content"><div class="solution-no">CAPACIDADE // 001</div><h3>CONECTE TUDO.<br /><span>SIMPLIFIQUE O RESTO.</span></h3><p>Integrações entre plataformas, APIs, automações operacionais e fluxos desenhados especialmente para a sua realidade.</p></div></article>
+          <article class="solution-box solution-small reveal"><div class="solution-top"><span>[ UX / INTERAÇÃO ]</span><b>↗</b></div><svg class="solution-abstract" viewBox="0 0 210 120" aria-hidden="true"><g fill="none" stroke="currentColor"><path d="M28 80 106 18 183 80 106 114Z"/><path d="M47 80 106 34 164 80 106 108Z"/><path d="M66 80 106 50 145 80 106 100Z"/><circle cx="106" cy="80" r="12"/></g></svg><h3>INTERFACES<br />QUE MARCAM.</h3><p>Experiências fluidas, imersivas e memoráveis.</p></article>
+          <article class="solution-box solution-small reveal"><div class="solution-top"><span>[ DADOS / GESTÃO ]</span><b>↗</b></div><div class="dashboard-motif" aria-hidden="true"><div><i style="height:37%"></i><i style="height:72%"></i><i style="height:51%"></i><i style="height:94%"></i><i style="height:66%"></i><i style="height:84%"></i><i style="height:53%"></i></div><span>◢ DATA / LIVE</span></div><h3>DECISÕES<br />MAIS RÁPIDAS.</h3><p>Dashboards, métricas e controle em tempo real.</p></article>
+          <article class="solution-box solution-wide reveal"><div><div class="solution-no">CAPACIDADE // 004</div><h3>CONSTRUÍDO PARA O PRESENTE.<br /><span>PREPARADO PARA O FUTURO.</span></h3><p>Arquiteturas planejadas para evolução, segurança, manutenção e crescimento contínuo.</p></div><div class="orbit-symbol" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div><div class="orbit-core">C<span>✓</span></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section" id="processo"><div class="section-wrap"><div class="section-topline"><span>03 / NOSSA METODOLOGIA</span><span>[ DO ZERO AO EXTRAORDINÁRIO ]</span></div><div class="process-layout"><div class="process-head"><span class="section-kicker">MENOS COMPLICAÇÃO. MAIS RESULTADO.</span><h2>DA IDEIA<br />AO <span>IMPACTO.</span></h2><p>Sem promessas vazias ou soluções genéricas. Um processo claro, colaborativo e centrado no seu objetivo.</p><a class="text-link" href="#contato">VAMOS CRIAR JUNTOS <span>↗</span></a></div><div class="steps"><div class="step reveal"><span class="step-index">01</span><div><h3>DESCOBERTA</h3><p>Entendemos seu cenário, suas necessidades e onde a tecnologia pode gerar mais valor.</p></div><span class="step-mark">+</span></div><div class="step reveal"><span class="step-index">02</span><div><h3>ESTRATÉGIA</h3><p>Desenhamos a solução, definimos os fluxos e planejamos uma experiência simples para quem vai usar.</p></div><span class="step-mark">+</span></div><div class="step reveal"><span class="step-index">03</span><div><h3>CONSTRUÇÃO</h3><p>Transformamos o planejamento em produto funcional, refinando cada detalhe e validando o resultado.</p></div><span class="step-mark">+</span></div><div class="step reveal"><span class="step-index">04</span><div><h3>EVOLUÇÃO</h3><p>Preparamos o projeto para novas funcionalidades, melhorias e crescimento no ritmo do seu negócio.</p></div><span class="step-mark">↗</span></div></div></div></div></section>
+
+    <section class="section contact-section" id="contato"><div class="contact-grid-bg" aria-hidden="true"></div><div class="section-wrap contact-layout"><div class="contact-main"><div class="section-topline"><span>04 / COMEÇAR AGORA</span><span>[ CANAL ABERTO ]</span></div><span class="section-kicker">TODA GRANDE SOLUÇÃO COMEÇA COM UMA CONVERSA</span><h2>TEM UMA IDEIA<br /><span>FORA DA CAIXA?</span><br />SOMOS <em>TODO OUVIDOS.</em></h2><p>Conte o que você tem em mente. Seja um site, uma automação ou um sistema completo, vamos encontrar a melhor forma de transformar a ideia em realidade.</p><div class="contact-signature"><span class="signal-dot"></span> TRANSMISSÃO DISPONÍVEL <span>//</span> INICIE SEU PROJETO</div></div><div class="contact-form-shell"><div class="form-top"><span>ABRIR NOVA SOLICITAÇÃO</span><span class="form-top-badge">◉ ONLINE</span></div><form id="brief-form"><label for="name">SEU NOME <span>*</span></label><input id="name" name="name" required maxlength="80" placeholder="Como podemos chamar você?" autocomplete="name" /><label for="contact">SEU CONTATO <span>*</span></label><input id="contact" name="contact" required maxlength="140" placeholder="Seu WhatsApp ou e-mail" autocomplete="email"/><label for="project-type">TIPO DE PROJETO</label><select id="project-type" name="type"><option value="Automação inteligente">Automação inteligente</option><option value="Site ou landing page">Site ou landing page</option><option value="Sistema personalizado">Sistema personalizado</option><option value="Ainda estou explorando">Ainda estou explorando</option></select><label for="description">FALE UM POUCO SOBRE A IDEIA <span>*</span></label><textarea id="description" name="description" rows="4" maxlength="1800" placeholder="O que você gostaria de criar ou automatizar?" required></textarea><button class="submit-button" type="submit">SOLICITAR UM PROJETO <span>↗</span></button><p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p><small>Ao clicar, abriremos o contato configurado para o projeto. Nenhuma informação é enviada para um servidor por este formulário.</small></form></div></div></section>
+  </main>
+  <footer class="footer"><div class="section-wrap"><div class="footer-upper"><a class="footer-wordmark" href="#inicio">CYBORGUE<span>®</span><small>DAS AUTOMAÇÕES</small></a><p>O futuro não é um destino.<br /><strong>É algo que construímos.</strong></p><a class="back-top" href="#inicio">VOLTAR AO TOPO ↑</a></div><div class="footer-lower"><span>© <span id="copyright-year">2026</span> CYBORGUE DAS AUTOMAÇÕES.</span><span>FEITO COM IDEIAS. MOVIDO POR TECNOLOGIA.</span><span>BRASIL ↗</span></div></div></footer>
+
+  <dialog id="film-dialog" class="film-dialog" aria-label="Cena original do Cyborgue com áudio"><div class="film-top"><div><span class="signal-dot"></span> ARQUIVO ORIGINAL / CENA COM ÁUDIO</div><button id="close-film" type="button" aria-label="Fechar vídeo">✕</button></div><video id="film-video" controls playsinline preload="metadata" poster="assets/hero-poster.webp"><source src="assets/cena-original-com-audio.mp4" type="video/mp4" />Seu navegador não consegue reproduzir este vídeo.</video><p>O vídeo original mantém imagem e áudio sincronizados. Feche esta janela para voltar ao efeito controlado pela rolagem.</p></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript><style>.boot-screen{display:none!important}.hero-copy[data-scene="0"]{opacity:1!important;transform:none!important}.reveal{opacity:1!important;transform:none!important}.hero-scroll{height:100vh!important}</style></noscript>
+</body>
+</html>
